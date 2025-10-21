@@ -3,6 +3,10 @@ const app = express()
 
 const PORT = 3000
 
+app.get('/', (req, res) => {
+res.send('Hello, world!');
+});
+
 app.listen(PORT, error => {
     if (error) { console.log("GRESKA") } else { console.log(`APROVED na portu ${PORT}`) }
 })
